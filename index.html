@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mercedes-product-catalog</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #f4f4f4;
+        color: #111;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #000000;
+        color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 0.2rem;
+      }
+
+      header img {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      .section {
+        padding: 1.5rem;
+      }
+
+      .product-info {
+        text-align: center;
+        background: white;
+        padding: 2rem 1rem;
+        margin: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .product-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .prices {
+        margin: 0.5rem 0;
+      }
+
+      .original-price {
+        text-decoration: line-through;
+        color: #999;
+        margin-right: 0.5rem;
+      }
+
+      .promo-price {
+        color: #c3002f;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      .buy-now {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1.5rem;
+        background-color: #000000;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .buy-now:hover {
+        background-color: #636070;
+      }
+
+      .product-details {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        margin: 0 1rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        background-color: #000000;
+        color: white;
+        margin-top: 0.2rem;
+      }
+
+      .catalogue {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 16px;
+        background-color: #000; /* full background if needed */
+      }
+
+      .catalogue a {
+        display: block;
+        text-decoration: none;
+        background-color: #111;
+        color: #fff;
+        padding: 14px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        transition: background 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+        border: solid 2px white;
+      }
+
+      .catalogue a:hover,
+      .catalogue a:focus {
+        background-color: #222;
+        transform: translateY(-2px);
+      }
+
+      @media (min-width: 600px) {
+        .catalogue {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="logo.png" alt="Mercedes-Benz Logo" /></a>
+      <h1>Mercedes-Benz Nigeria</h1>
+    </header>
+
+    <div class="catalogue">
+      <a href="interior-care-kit/interior-care-kit.html"
+        >interior-care-kit (A2119860000)</a
+      >
+      <a href="cockpit-lotion/cockpit-lotion.html"
+        >cockpit-lotion (A000986477409)</a
+      >
+      <a href="mens-t-shirt-l/mens-t-shirt-l.html"
+        >mens-t-shirt-off-white-l (B66041548)</a
+      >
+      <a href="led-logo-projector/led-logo-projector.html"
+        >led-logo-projector (A2138204503)</a
+      >
+      <a
+        href="C-Class,-Saloon-AVANTGARDE-W206/C-Class,-Saloon-AVANTGARDE-W206.html"
+        >c-class-saloon-AVANTGARDE-W206 (B66960635)</a
+      >
+      <a href="key-ring-Prague/key-ring-Prague.html"
+        >key-ring-Prague (B66953744)</a
+      >
+      <a
+        href="Mens-wristwatch-Classic-Small-Seconds/Mens-wristwatch-Classic-Small-Seconds.html"
+        >Mens-wristwatch-Classic-Small-seconds (B66041928)</a
+      >
+      <a href="Key-ring-Typo-S/Key-ring-Typo-S.html"
+        >Key-ring-Typo-S (B66958419)</a
+      >
+      <a href="Key-ring-Typo-GLS/Key-ring-Typo-GLS.html"
+        >Key-ring-Typo-GLS (B66958427)</a
+      >
+      <a
+        href="Handpresso-Auto-Capsule-espresso-machine/Handpresso-Auto-Capsule-espresso-machine.html"
+        >Handpresso-Auto-Capsule-espresso-machine (B67872174)</a
+      >
+      <a href="mens-t-shirt-m/mens-t-shirt-m.html"
+        >mens-t-shirt-off-white-m (B66041547)</a
+      >
+      <a href="Mercedes-Benz-sign-EdP/Mercedes-Benz-sign-EdP.html"
+        >Mercedes-Benz-sign-EdP (B66959567)</a
+      >
+      <a href="Mercedes-Benz-Man-EdT/Mercedes-Benz-Man-EdT.html"
+        >Mercedes-Benz-Man-EdT (B66958631)</a
+      >
+      <a href="Insect-remover/Insect-remover.html"
+        >Insect-remover (A002986117116)</a
+      >
+      <a href="Polishing-fleece/Polishing-fleece.html"
+        >Polishing-fleece (A0009860562)</a
+      >
+      <a href="Key-ring-Sindelfingen/Key-ring-Sindelfingen.html"
+        >Key-ring-Sindelfingen (B66041523)</a
+      >
+      <a href="Pop-Edition-EdP/Pop-Edition-EdP.html"
+        >Pop-Edition-EdP (B66959752)</a
+      >
+      <a href="Key-ring-Typo-GLA/Key-ring-Typo-GLA.html"
+        >Key-ring-Typo-GLA (B66958424)</a
+      >
+      <a href="Key-ring-Typo-GLB/Key-ring-Typo-GLB.html"
+        >Key-ring-Typo-GLB (B66953742)</a
+      >
+      <a href="Mens-T-shirt-black-l/Mens-T-shirt-black-l.html"
+        >Mens T-shirt-black-l (B66958321)</a
+      >
+      <a href="Mens-T-shirt-black-m/Mens-T-shirt-black-m.html"
+        >Mens T-shirt-black-m (B66958320)</a
+      >
+      <a href="Mens-T-shirt-navy-l/Mens-T-shirt-navy-l.html"
+        >Mens-T-shirt-navy-l (B66041553)</a
+      >
+      <a href="Plastics-cleaner/Plastics-cleaner.html"
+        >Plastics-cleaner (A0019869471)</a
+      >
+      <a href="Wheel-cleaner/Wheel-cleaner.html"
+        >Wheel-cleaner (A001986347116)</a
+      >
+      <a href="Rapid-cleaner/Rapid-cleaner.html"
+        >Rapid-cleaner (A002986517112)</a
+      >
+      <a href="Paintwork-preservation-agent/Paintwork-preservation-agent.html"
+        >Paintwork-preservation-agent (A000986447411)</a
+      >
+      <a href="Stain-remover/Stain-remover.html"
+        >Stain-remover (A001986287110)</a
+      >
+      <a href="Textile-upholstery-cleaner/Textile-upholstery-cleaner.html"
+        >Textile upholstery cleaner (A001986257112)</a
+      >
+      <a href="Ballpoint-pen/Ballpoint-pen.html">Ballpoint-pen (B66043352)</a>
+      <a href="Shopping-bag/Shopping-bag.html">Shopping-bag (B66952989)</a>
+      <a href="Cap/Cap.html">Cap-black-organic (B66041705)</a>
+      <a href="Key-ring-black-leather/Key-ring-black-leather.html"
+        >Key-ring-black-leather</a
+      >
+      <a href="Belt-bag/Belt-bag.html">Belt-Hip bag (B66959706)</a>
+      <a href="Ballpoint-pen-black/Ballpoint-pen-black.html"
+        >Ballpoint-pen-black (B66043350)</a
+      >
+      <a href="Cap-black/Cap-black.html">Cap-black (B66954531)</a>
+      <a href="AMG-backpack-compartment/AMG-backpack-compartment.html"
+        >AMG-backpack-compartment (B66956101)</a
+      >
+      <a href="Weekend-bag/Weekend-bag.html">Weekend-bag (B66042011)</a>
+      <a href="Rucksack/Rucksack.html">Rucksack-Backpack (B66959479)</a>
+      <a href="Window-cleaner-intensive/Window-cleaner-intensive.html"
+        >Window-cleaner-intensive (A0009864071)</a
+      >
+      <a href="Window-cloth/Window-cloth.html">Window-cloth (A0009861462)</a>
+      <a href="Imitation-leather-cloth/Imitation-leather-cloth.html"
+        >Imitation-leather-cloth (A0009861262)</a
+      >
+      <a href="Exterior-care-kit/Exterior-care-kit.html"
+        >Exterior-care-kit (A211986010011)</a
+      >
+      <a href="Mens-wristwatch-Classic-Auto/Mens-wristwatch-Classic-Auto.html"
+        >Mens wristwatch, Classic Auto (B66041677)</a
+      >
+      <a href="Torch-LED-large/Torch-LED-large.html"
+        >Torch-LED-large (B66953317)</a
+      >
+      <a href="Car-shampoo/Car-shampoo.html">Car-shampoo (A001986417111)</a>
+      <a href="Torch-LED-small/Torch-LED-small.html"
+        >Torch-LED-small (B66953318)</a
+      >
+      <a href="Window-cleaner-interior/Window-cleaner-interior.html"
+        >Window-cleaner-interior (A001986387112)</a
+      >
+      <a href="Chrome-care/Chrome-care.html">Chrome care (A000986437416)</a>
+      <a href="Leather-care-foam/Leather-care-foam.html"
+        >Leather care foam (A001986597115)</a
+      >
+      <a href="Mens-T-shirt-black-l-v-neck/Mens-T-shirt-black-l-v-neck.html"
+        >Mens-T-shirt-black-l-v-neck (B66958719)</a
+      >
+      <a
+        href="Credit-card-wallet-with-clip-24/Credit-card-wallet-with-clip-24.html"
+        >Credit-card-wallet-with-clip-24 (B66955699)</a
+      >
+    </div>
+
+    <footer>
+      <p>
+        Weststar Associates Ltd. Authorised General Distributor of Mercedes-Benz
+        in Nigeria. Plot 735 Cadastral Zone C16, Idu Industrial Area, Abuja.
+        Tel.: +234-815-519-0582
+      </p>
+      <br />
+      <p>&copy; 2025 Mercedes-Benz Nigeria. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Sort catalogue <a> elements alphabetically
+      window.addEventListener("DOMContentLoaded", () => {
+        const catalogue = document.querySelector(".catalogue");
+        const links = Array.from(catalogue.querySelectorAll("a"));
+
+        links.sort((a, b) =>
+          a.textContent
+            .trim()
+            .toLowerCase()
+            .localeCompare(b.textContent.trim().toLowerCase())
+        );
+
+        // Clear and re-append sorted links
+        catalogue.innerHTML = "";
+        links.forEach((link) => catalogue.appendChild(link));
+      });
+    </script>
+  </body>
+</html>
